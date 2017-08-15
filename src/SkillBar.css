@@ -1,0 +1,22 @@
+.SkillBar{
+
+}
+.SkillBar .label{
+  display: inline-block;
+}
+
+.SkillBar .units{
+  display: block;
+  width: 6em;
+  float: right;
+}
+.SkillBar .unit{
+  display: inline-block;
+  background: #ddd;
+  outline: 1px solid #bbb;
+  height: 0.5em;
+  width: 1.2em;
+}
+.SkillBar .unit.empty{
+  background: #fff;
+}
