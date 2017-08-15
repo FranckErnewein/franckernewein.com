@@ -28,7 +28,7 @@ export default function About(){
           </li>
           <li>
             <a href="https://www.linkedin.com/in/franck-ernewein-ba881b99/">
-              <i className="fa fa-linkedin-square" /> Linked in
+              <i className="fa fa-linkedin-square" /> LinkedIn
             </a>
           </li>
           <li>
@@ -42,7 +42,7 @@ export default function About(){
       <div className="columns six">
         <h3>Source code</h3>
         <p>
-          This website was designed with React, you can checkout the source on <a href="https://github.com/FranckErnewein/franckernewein.com">github</a>.
+          This website was designed with React, you can checkout the <a href="https://github.com/FranckErnewein/franckernewein.com">source code</a> on Github.
         </p>
       </div>
     </div>

@@ -10,28 +10,28 @@ export default function Skills(){
       <div className="columns three">
         <h3>Web app</h3>
         <p>
-          in the wild, I built and colaborated on many differents type of webapp. Today I'm using <a href="https://facebook.github.io/react/">React</a> a lot.
+          During 10 years, I built and collaborated on many differents types of webapps. Today, I'm using <a href="https://facebook.github.io/react/">React</a> a lot.
         </p>
       </div>
 
       <div className="columns three">
         <h3>Big Data &amp; Data viz</h3>
         <p>
-          At <a href="https://www.tweetping.net/">Tweetping</a>, I developed a strong comprehension of big data problems and the best way to make data accessible and digest for everyone.
+          At <a href="https://www.tweetping.net/">Tweetping</a>, I developed a strong expertise in big data, specially in the way to represent data and make it comprehensive.
         </p>
       </div>
 
       <div className="columns three">
         <h3>Realtime</h3>
         <p>
-          I'm very fimiliar with realtime interfaces and realtime protcols for webapp (as webscokets or server event).
+          I'm very familiar with realtime interfaces and realtime protcols for webapp (as Webscokets or ServerEvent).
         </p>
       </div>
 
       <div className="columns three">
         <h3>Microservices</h3>
         <p>
-          Docker, nodejs, Redis. My favorite stack to craft realtime application.
+          Nodejs, Redis, Docker... Are my favorite tools to create microservices architectures, to scale, and to manage processes.
         </p>
       </div>
 
