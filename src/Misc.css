@@ -1,0 +1,7 @@
+
+.Misc .processing img{
+  display: block;
+  float: left;
+  width: 30%;
+  margin: 0 1px 1px 0;
+}

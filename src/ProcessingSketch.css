@@ -1,0 +1,53 @@
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.ProcessingSketch{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  animation: fadeIn 0.4s;
+}
+
+.ProcessingSketch canvas{
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.ProcessingSketch nav{
+  color: #fff;
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 59px;
+  border-bottom: 1px solid #333;
+}
+.ProcessingSketch nav img{
+  width: 59px;  
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.ProcessingSketch nav a:hover img,
+.ProcessingSketch nav .on img{
+  opacity: 1;
+}
+
+.ProcessingSketch .close{
+  color: #eee;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 30px;
+  line-height: 60px;
+  text-decoration: none;
+}

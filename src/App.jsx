@@ -3,6 +3,8 @@ import { Link, Route } from 'react-router-dom';
 import Home from './Home.jsx';
 import Skills from './Skills.jsx';
 import About from './About.jsx';
+import Misc from './Misc.jsx';
+
 import './App.css';
 
 class App extends Component {
@@ -10,7 +12,7 @@ class App extends Component {
     const pages = {
       'Home': '/home',
       'Skills': '/skills',
-      //'Miscellaneous': '/misc',
+      'Miscellaneous': '/misc',
       'About': '/about'
     };
     const menuItems = Object.keys(pages).map(label => {
@@ -32,10 +34,10 @@ class App extends Component {
         <Route exact path="/" component={Home} />
         <Route path="/home" component={Home} />
         <Route path="/skills" component={Skills} />
+        <Route path="/misc" component={Misc} />
         <Route path="/about" component={About} />
       </section>
     </div>;
-
   }
 }
 
