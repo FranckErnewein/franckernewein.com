@@ -114,7 +114,7 @@ float angle=0;
 void setup(){
    frameRate(60);
   
-   size(1024,700);
+   size(1024, 768);
    background(0); 
    
    fill(0,255,0);

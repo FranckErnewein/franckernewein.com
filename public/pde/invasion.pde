@@ -43,7 +43,7 @@ boolean clear = false;
 //Snake s;
 
 void setup(){
-  size(1024,768); 
+  size(1024, 768);
   background(0);
   snakes = new ArrayList<Snake>();
   initBall(width/2, height/2);
