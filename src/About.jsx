@@ -1,16 +1,16 @@
 import React from 'react';
 import TypeWriter from './TypeWriter.jsx';
+import MailTo from './MailTo.jsx';
 
 export default function About(){
-  const email = atob('ZnJhbmNrLmVybmV3ZWluQGdtYWlsLmNvbQ==');
   return <div className="About">
     <h2><TypeWriter text="About" timer={90} /></h2>
     <div className="row">
       <div className="columns three">
         <h3>Contact</h3>
         <address>
+          <MailTo /><br />
           Tel: +33 6 50 79 41 35 <br />
-          <a href={'mailto:' + email}>{email}</a>
         </address>
       </div>
       <div className="columns three">

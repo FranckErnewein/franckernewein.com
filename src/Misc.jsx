@@ -9,7 +9,7 @@ import './Misc.css';
 export default function Misc(props) {
   const {match: {url}} = props;
 
-  const thumbs = sketch.map(id => {
+  const sketchThumbs = sketch.map(id => {
     return <Link to={`${url}/processing/${id}`} key={id}>
       <img src={`/img/processing/m_${id}.png`} alt={id} />
     </Link>;
@@ -20,8 +20,11 @@ export default function Misc(props) {
     <h3>Processing</h3>
     <p>During my free time, I like to play with <a href="http://www.processing.org">Processing</a>. Here are some sketches I coded:</p>
     <div className="processing">
-      {thumbs}
+      {sketchThumbs}
     </div>
+    <div className="clr"></div>
+    <br />
+    <br />
     <Route path={`${url}/processing/:sketchId`} component={ProcessingSketch} />
 
   </div>;
