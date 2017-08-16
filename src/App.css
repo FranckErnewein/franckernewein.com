@@ -31,6 +31,10 @@ address{
   font-style: normal;
 }
 
+section .columns{
+  margin-bottom: 20px;
+}
+
 .MainNav a{
   color: #333;
   text-transform: uppercase;
