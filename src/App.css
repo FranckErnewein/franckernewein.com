@@ -30,6 +30,10 @@ header{
 address{
   font-style: normal;
 }
+section address i.fa{
+  display: inline-block;
+  width: 15px;
+}
 
 section .columns{
   margin-bottom: 20px;
@@ -78,4 +82,8 @@ section ul li{
   margin: 0 0 20px 0;
   border: 7px solid #fff;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.About address{
+  margin-top: 8px;
 }
