@@ -11,15 +11,21 @@ export default class TypeWriter extends Component {
     const {text, timer} = this.props;
     this.typeText(text, timer);
   }
+  componentWillUnmount() {
+    this.clearTimeouts();
+  }
   typeText(text, timer) {
-    if (this.intervals) {
-      this.intervals.forEach(interval => clearInterval(interval));
-    }
-    this.intervals = text.split('').map((c, i) => setTimeout(() => {
+    this.clearTimeouts();
+    this.timeouts = text.split('').map((c, i) => setTimeout(() => {
       this.setState({
         text: text.slice(0, i + 1)
       });
     }, i * timer));
+  }
+  clearTimeouts() {
+    if (this.timeouts) {
+      this.timeouts.forEach(t => clearTimeout(t));
+    }
   }
   render() {
     const {text} = this.state;
