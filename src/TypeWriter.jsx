@@ -44,16 +44,5 @@ export default class TypeWriter extends Component {
         </span>;
       })}
     </span>;
-  /*
-    const everTyped = text.slice(0, -1);
-    const lastChar = text.slice(text.length - 1, text.length);
-
-    return <span className="TypeWriter">
-      {everTyped}
-      <span className="TypeWriter-LastChar">
-        {lastChar}
-      </span>
-    </span>;
-    */
   }
 }

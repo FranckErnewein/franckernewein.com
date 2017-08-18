@@ -2,6 +2,19 @@
 .Misc .processing img{
   display: block;
   float: left;
-  width: 30%;
-  margin: 0 1px 1px 0;
+  width: 25%;
+}
+
+.Misc .photos a{
+  display: block;
+  float: left;
+  width: 10%;
+  padding-bottom: 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50;
+  transition: opacity 0.2s;
+}
+.Misc .photos a:hover{
+  opacity: 1;
 }
