@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Route } from 'react-router-dom';
 import TypeWriter from './TypeWriter.jsx';
 import ProcessingSketch from './ProcessingSketch';
+import Photo from './Photo';
 import { sketch } from './data';
 import photos from './photos.json';
 
@@ -43,6 +44,7 @@ export default function Misc(props) {
     <br />
     <br />
     <Route path={`${url}/processing/:sketchId`} component={ProcessingSketch} />
+    <Route path={`${url}/photos/:fileName`} component={Photo} />
 
   </div>;
 }

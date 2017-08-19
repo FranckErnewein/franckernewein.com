@@ -5,6 +5,8 @@ fs.readdir(__dirname + '/public/img/photos/', (err, inputs) => {
 
   const items = inputs.filter(img => img.indexOf('.jpg') > 0 || img.indexOf('.JPG') > 0);
 
+  console.log(items.length + ' pictures:');
+
   fs.writeFileSync('src/photos.json', JSON.stringify(items));
   items.forEach(img => {
     const output = __dirname + '/public/img/photos/thumb/' + img;
