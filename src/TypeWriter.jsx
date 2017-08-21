@@ -30,7 +30,7 @@ export default class TypeWriter extends Component {
   render() {
     const {text} = this.state;
     const {timer} = this.props;
-    const charWidth = 0.85;
+    const charWidth = 0.68;
 
     return <span className="TypeWriter">
       {text.split('').map((c, i) => {
