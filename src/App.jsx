@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, Route } from 'react-router-dom';
+import GoogleAnalytics from './GoogleAnalytics';
 import MainNavItem from './MainNavItem.jsx';
 import Home from './Home.jsx';
 import Skills from './Skills.jsx';
@@ -31,6 +32,7 @@ class App extends Component {
       <div className="line"></div>
       <br />
       <section className="container">
+        <Route path="/" component={GoogleAnalytics} />
         <Route exact path="/" component={Home} />
         <Route path="/home" component={Home} />
         <Route path="/skills" component={Skills} />
