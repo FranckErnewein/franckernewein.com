@@ -34,7 +34,9 @@ export default function Misc(props) {
     <div className="clr"></div>
 
     <h3>Aquarelles</h3>
-    <p>When I want to leave screen, I recently started to paint with watercolours. Don't be rude, I'm still a newbie 😅</p>
+    <p>
+      When I want to leave screen, I recently started to paint with watercolours. Don't be rude, I'm still a newbie <span role="img" aria-label="smiling face with open mouth and cold sweat">😅</span>.
+    </p>
     <div className="aquarelles">
       <div className="row">
         <div className="columns six">
