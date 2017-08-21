@@ -8,6 +8,7 @@ visit [franckernewein.net](http://franckernewein.net/) to check it online.
   npm start //start dev server
   npm run build //build js/css for production
   npm run html //generate static pages HTML
+  npm run photo //generate thumbs and JSON data for photos
 ```
 
 
