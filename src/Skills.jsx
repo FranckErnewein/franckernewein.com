@@ -24,7 +24,7 @@ export default function Skills(){
       <div className="columns three">
         <h3>Realtime</h3>
         <p>
-          I'm very familiar with realtime interfaces and realtime protcols for webapp (as Webscokets or ServerEvent).
+          I'm very familiar with realtime interfaces and realtime protocols for webapp (as Webscokets or ServerEvent).
         </p>
       </div>
 
