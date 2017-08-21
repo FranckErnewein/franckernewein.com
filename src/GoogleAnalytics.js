@@ -1,7 +1,9 @@
 import { Component } from 'react';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('UA-32876599-5');
+if(typeof window !== 'undefined'){
+  ReactGA.initialize('UA-32876599-5');
+}
 
 export default class GoogleAnalytics extends Component {
   constructor(props) {
@@ -17,11 +19,13 @@ export default class GoogleAnalytics extends Component {
   }
 
   sendPageChange(pathname, search = '') {
-    const page = pathname + search;
-    ReactGA.set({
-      page
-    });
-    ReactGA.pageview(page);
+    if(ReactGA){
+      const page = pathname + search;
+      ReactGA.set({
+        page
+      });
+      ReactGA.pageview(page);
+    }
   }
 
   render() {
