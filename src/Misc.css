@@ -18,3 +18,16 @@
 .Misc .photos a:hover{
   opacity: 1;
 }
+
+.Misc .aquarelles .columns{
+  position: relative;
+}
+.Misc .aquarelles img{
+  max-width: 100%;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.Misc .clr{
+  margin-bottom: 60px;
+}
+

@@ -19,7 +19,7 @@ export default function Misc(props) {
 
   const photoThumbs = photos.map(fileName => {
     const style = {
-      backgroundImage:`url(/img/photos/thumb/${fileName})`
+      backgroundImage: `url(/img/photos/thumb/${fileName})`
     };
     return <Link to={`${url}/photos/${fileName}`} key={fileName} style={style} />;
   });
@@ -32,17 +32,36 @@ export default function Misc(props) {
       {photoThumbs}
     </div>
     <div className="clr"></div>
-    <br />
-    <br />
-    <br />
+
+    <h3>Aquarelles</h3>
+    <p>When I want to leave screen, I recently started to paint with watercolours. Don't be rude, I'm still a newbie 😅</p>
+    <div className="aquarelles">
+      <div className="row">
+        <div className="columns six">
+          <img src="/img/aquarelle/1.jpg" alt="" />
+        </div>
+        <div className="columns six">
+          <img src="/img/aquarelle/2.jpg" alt="" />
+        </div>
+      </div>
+      <div className="row">
+        <div className="columns six">
+          <img src="/img/aquarelle/3.jpg" alt="" />
+        </div>
+        <div className="columns six">
+          <img src="/img/aquarelle/4.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div className="clr"></div>
+
     <h3>Processing</h3>
     <p>During my free time, I like to play with <a href="http://www.processing.org">Processing</a>. Here are some sketches I coded:</p>
     <div className="processing">
       {sketchThumbs}
     </div>
     <div className="clr"></div>
-    <br />
-    <br />
+
     <Route path={`${url}/processing/:sketchId`} component={ProcessingSketch} />
     <Route path={`${url}/photos/:fileName`} component={Photo} />
 
