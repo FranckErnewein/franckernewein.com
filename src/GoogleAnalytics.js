@@ -17,7 +17,6 @@ export default class GoogleAnalytics extends Component {
   }
 
   sendPageChange(pathname, search = '') {
-    console.log('log', pathname, search);
     const page = pathname + search;
     ReactGA.set({
       page
