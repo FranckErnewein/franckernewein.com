@@ -20,7 +20,7 @@ export default class Photo extends Component {
     this.setState({
       path: null
     });
-    const path = `/img/photos/${fileName}`;
+    const path = `/img/photos/normal/${fileName}`;
     const img = new Image();
     img.onload = () => this.setState({
       path
