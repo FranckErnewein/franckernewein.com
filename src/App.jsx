@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, Route } from 'react-router-dom';
+import MainNavItem from './MainNavItem.jsx';
 import Home from './Home.jsx';
 import Skills from './Skills.jsx';
 import About from './About.jsx';
@@ -17,10 +18,9 @@ class App extends Component {
     };
     const menuItems = Object.keys(pages).map(label => {
       const url = pages[label];
-      return <div key={label} className="columns three">
-        <Link to={url}>{label}</Link>
-      </div>;
+      return <MainNavItem to={url} key={label} >{label}</MainNavItem>;
     });
+
     return <div className="App">
       <header>
         <div className="container">
