@@ -74,7 +74,24 @@ section ul li{
   color: #333;
 }
 
-.Skills p{
+
+@keyframes elementAppear{
+  0%{
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes elementFadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .Home img{
@@ -83,8 +100,38 @@ section ul li{
   margin: 0 0 20px 0;
   border: 7px solid #fff;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  animation: elementAppear 0.5s both 750ms;
 }
+
+.Home p{
+  animation: elementAppear 0.5s both 500ms;
+}
+
+.Skills .columns{
+  animation: elementAppear 0.5s both 0.5s;
+}
+
+.Skills .row.r1 .columns:nth-child(1){ animation-delay: 0.6s;}
+.Skills .row.r1 .columns:nth-child(2){ animation-delay: 0.7s;}
+.Skills .row.r1 .columns:nth-child(3){ animation-delay: 0.8s;}
+.Skills .row.r1 .columns:nth-child(4){ animation-delay: 0.9s;}
+
+.Skills .row.r2 .columns:nth-child(1){ animation-delay: 1.1s;}
+.Skills .row.r2 .columns:nth-child(2){ animation-delay: 1.2s;}
+.Skills .row.r2 .columns:nth-child(3){ animation-delay: 1.3s;}
+.Skills .row.r2 .columns:nth-child(4){ animation-delay: 1.4s;}
+
+
+.Misc{ animation: elementFadeIn 0.5s both 0s; }
 
 .About address{
   margin-top: 8px;
 }
+
+.About .columns{
+  animation: elementAppear 1s both 0.5s;
+}
+.About .columns:nth-child(1){ animation-delay: 500ms;}
+.About .columns:nth-child(2){ animation-delay: 750ms;}
+.About .columns:nth-child(3){ animation-delay: 1000ms;}
+

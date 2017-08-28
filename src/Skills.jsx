@@ -6,7 +6,7 @@ export default function Skills(){
   return <div className="Skills">
     <h2><TypeWriter text="Skills" timer={90} /></h2>
 
-    <div className="row">
+    <div className="row r1">
       <div className="columns three">
         <h3>Web app</h3>
         <p>
@@ -38,7 +38,7 @@ export default function Skills(){
     </div>
     <br />
 
-    <div className="row">
+    <div className="row r2">
       <div className="columns three">
         <h3>Languages</h3>
         <SkillBar value={5} label="Javascript" />
